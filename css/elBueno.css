@@ -1,0 +1,43 @@
+body {
+  width:100%; /*ajustamos  el  body  al  100% de ancho */
+  padding: 0;
+  margin: 0 auto;
+
+}
+
+/*le  asignamos  los  parametros  que  tiene body  como  su  padre en ancho*/
+.container {
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+}
+
+.kitten {
+  position:absolute;
+}
+
+.background {
+  width: 100%
+}
+
+@media only screen and (max-width:768px){
+  .kitten{
+    content:url("../img/kitten-large.png");
+    width:50%
+  }
+  .background{
+    content:url("../img/dawn.png");
+  }
+}
+
+@media only screen and (max-width:320px){
+  .kitten{
+    content:url("../img/kitten-small.png");
+    width:25%
+  }
+  .background{
+    content:url("../img/midnight-conversation_861064.jpg");
+  }
+}
